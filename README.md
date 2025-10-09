@@ -1,4 +1,4 @@
-# Nuxt Minimal Starter  11
+# Nuxt Minimal Starter  
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -7,7 +7,7 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 Make sure to install dependencies:
 
 ```bash
-# npm
+# npm  11
 npm install
 
 # pnpm
