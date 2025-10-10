@@ -18,7 +18,7 @@
             <span class="gradient-text">FullStack Developer</span>
           </h1>
           <p class="profile-description">
-            사용자 경험을 중시하는 풀스택 개발자입니다.<br>
+            팀워크를 중시하는 풀스택 개발자입니다.<br>
             백엔드, 프론트엔드 모두 가능합니다.
           </p>
           
@@ -32,13 +32,13 @@
               <div class="stat-label">프로젝트</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">만족도</div>
+              <div class="stat-number">A+</div>
+              <div class="stat-label">성실함</div>
             </div>
           </div>
           
           <div class="profile-actions">
-            <q-btn 
+            <!-- <q-btn 
               color="primary" 
               size="lg" 
               rounded 
@@ -47,17 +47,18 @@
             >
               <q-icon name="email" class="q-mr-sm" />
               연락하기
-            </q-btn>
+            </q-btn> -->
             <q-btn 
-              outline 
+              inline 
               color="primary" 
               size="lg" 
               rounded 
               class="action-btn"
               no-caps
+              @click="showConfirmDialog"
             >
-            <q-icon name="download" class="q-mr-sm" />
-                <a href="/files/[2025.07.25]이력서_남진우_발주날짜포함.docx" download>이력서 다운로드</a>
+            <q-icon name="download" class="q-mr-sm"  />
+                이력서 다운로드
             </q-btn>
           </div>
         </div>
@@ -72,6 +73,42 @@
       </div>
       
       <div class="skills-grid">
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Vue.js" />
+            </div>
+          </template>
+          <h3 class="skill-title">Spring, SpringBoot</h3>
+          <p class="skill-description">
+            백엔드 핵심 프레임워크
+          </p>
+          <div class="skill-level">
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+            <span class="skill-percentage">95%</span>
+          </div>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Vue.js" />
+            </div>
+          </template>
+          <h3 class="skill-title">Git, Svn...</h3>
+          <p class="skill-description">
+            버전 관리 및 협업 도구
+          </p>
+          <div class="skill-level">
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+            <span class="skill-percentage">95%</span>
+          </div>
+        </AppCard>
+
         <AppCard class="skill-card">
           <template #header>
             <div class="skill-icon">
@@ -177,7 +214,54 @@
 
 <script setup lang="ts">
 import { button } from '#build/ui';
+import { Dialog } from 'quasar';
 
+const resumeUrl = '/files/[2025.07.25]이력서_남진우_발주날짜포함.docx'
+
+const showConfirmDialog = () => {
+
+  console.log('Download button clicked');
+  Dialog.create({
+    title: '다운로드 확인',
+    message: '이력서를 다운로드하시겠습니까?',
+    ok: {
+      label: '다운로드',
+      color: 'primary'
+    },
+    cancel: {
+      label: '취소',
+      color: 'negative'
+    }
+  }).onOk(() => {
+    // a 태그를 동적으로 생성하여 다운로드 실행
+    const link = document.createElement('a')
+    link.href = resumeUrl
+    link.download = '이력서_남진우.docx'
+    link.click()
+  }).onCancel(() => {
+    console.log('다운로드 취소됨')
+  })
+}
+
+// 사용 안함 
+const downloadResume = () => {
+  const resumeUrl = '/files/[2025.07.25]이력서_남진우_발주날짜포함.docx';
+  const fileName = '이력서_남진우.docx';
+
+  // Blob을 사용하여 다운로드 트리거
+  fetch(resumeUrl)
+    .then(response => response.blob())
+    .then(blob => {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = fileName;
+      link.click();
+      URL.revokeObjectURL(link.href); // 메모리 해제
+    })
+    .catch(error => {
+      console.error('파일 다운로드 실패:', error);
+    });
+};
 </script>
 
 <style scoped lang="scss">
@@ -268,8 +352,8 @@ import { button } from '#build/ui';
 }
 
 .profile-name {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 16px;
   line-height: 1.2;
   

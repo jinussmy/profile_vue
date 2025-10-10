@@ -44,6 +44,7 @@ export default defineNuxtConfig({
   },
   
   quasar: {
+    plugins: ['Dialog'], // Dialog 플러그인 등록
     // Quasar 옵션 예시
     iconSet: 'material-icons',
     lang: 'ko-KR',

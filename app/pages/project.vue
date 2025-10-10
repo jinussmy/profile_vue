@@ -8,8 +8,8 @@
             안녕하세요, <span class="gradient-text">남진우</span>입니다
           </h1>
           <p class="intro-description">
-            사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다.<br>
-            Vue.js와 Nuxt.js를 기반으로 현대적이고 반응형인 웹 애플리케이션을 개발합니다.
+            팀워크를 최우선으로 생각하는 프론트엔드 개발자입니다.<br>
+            
           </p>
           
           <div class="intro-highlights">
@@ -17,21 +17,21 @@
               <q-icon name="code" size="2rem" color="primary" />
               <div>
                 <h3>16+ 년 경력</h3>
-                <p>프론트엔드 개발</p>
+                <p>백엔드,프론트엔드 개발</p>
               </div>
             </div>
             <div class="highlight-item">
               <q-icon name="school" size="2rem" color="secondary" />
               <div>
-                <h3>홍익대학교 컴퓨터공학</h3>
+                <h3>홍익대학교 컴퓨터 전공</h3>
                 <p>학사 학위</p>
               </div>
             </div>
             <div class="highlight-item">
               <q-icon name="location_on" size="2rem" color="accent" />
               <div>
-                <h3>서울, 한국</h3>
-                <p>원격/현장 모두 가능</p>
+                <h3>서울특별시 신도림 거주 </h3>
+                <p>교통 편리함</p>
               </div>
             </div>
           </div>
@@ -184,7 +184,7 @@
 
 // 소개 섹션
 .intro-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #363636 0%, #d6d6d8 100%);
   color: white;
   padding: 100px 0;
   position: relative;
@@ -221,8 +221,8 @@
 }
 
 .intro-title {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 24px;
   line-height: 1.2;
   

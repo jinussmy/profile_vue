@@ -12,25 +12,33 @@
         <div class="profile-nav">
           <q-btn 
             flat 
-            label="메인" 
+            label="MAIN" 
             to="/" 
             class="nav-btn"
             :class="{ 'nav-btn--active': $route.path === '/' }"
           />
           <q-btn 
             flat 
-            label="소개" 
-            to="/about" 
+            label="SKILL" 
+            to="/skill" 
             class="nav-btn"
-            :class="{ 'nav-btn--active': $route.path === '/about' }"
+            :class="{ 'nav-btn--active': $route.path === '/skill' }"
           />
           <q-btn 
+            flat 
+            label="PROJECT" 
+            to="/project" 
+            class="nav-btn"
+            :class="{ 'nav-btn--active': $route.path === '/project' }"
+          />
+          <!-- <q-btn 
             flat 
             icon="email" 
             class="contact-btn"
           >
             <q-tooltip>연락하기</q-tooltip>
-          </q-btn>
+          </q-btn> -->
+          
         </div>
       </q-toolbar>
     </q-header>
