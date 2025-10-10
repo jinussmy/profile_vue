@@ -2,14 +2,14 @@
   <q-card class="project-card">
     <div class="project-card__image-container">
       <img 
-        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop" 
+        src="~/assets/image/mteacher.jpg" 
         class="project-card__image"
         alt="프로젝트 이미지"
       />
       <div class="project-card__overlay">
         <div class="project-card__tech-stack">
-          <q-chip size="sm" color="primary" text-color="white">Vue.js</q-chip>
-          <q-chip size="sm" color="secondary" text-color="white">Nuxt.js</q-chip>
+          <q-chip size="sm" color="primary" text-color="white">SpringBoot</q-chip>
+          <q-chip size="sm" color="secondary" text-color="white">Thymeleaf</q-chip>
         </div>
         <q-btn 
           icon="open_in_new" 
@@ -20,39 +20,100 @@
         />
       </div>
     </div>
-
     <q-card-section class="project-card__content">
-      <div class="text-h6 project-card__title">E-Commerce Platform</div>
+      <div class="text-h6 project-card__title">미래엔 엠티처</div>
       <div class="text-subtitle2 project-card__description">
-        Vue.js와 Nuxt.js를 활용한 현대적인 전자상거래 플랫폼
+        선생님들을 위한 교육 플랫폼 프로젝트입니다. 
       </div>
       
       <div class="project-card__meta">
         <div class="project-card__date">
           <q-icon name="calendar_month" />
-          <span>2024.01</span>
+          <span>2025.10</span>
+        </div>
+        <div class="project-card__status">
+          <q-icon name="check_circle" color="green" />
+          <span>진행</span>
+        </div>
+      </div>
+    </q-card-section>
+  </q-card>
+
+  <q-card class="project-card">
+    <div class="project-card__image-container">
+      <img 
+        src="~/assets/image/kt.jpg" 
+        class="project-card__image"
+        alt="프로젝트 이미지"
+      />
+      <div class="project-card__overlay">
+        <div class="project-card__tech-stack">
+          <q-chip size="sm" color="primary" text-color="white">SpringBoot</q-chip>
+          <q-chip size="sm" color="secondary" text-color="white">Apach</q-chip>
+        </div>
+        <q-btn 
+          icon="open_in_new" 
+          color="white" 
+          round 
+          size="lg"
+          class="project-card__view-btn"
+        />
+      </div>
+    </div>
+    <q-card-section class="project-card__content">
+      <div class="text-h6 project-card__title">KT GateWay</div>
+      <div class="text-subtitle2 project-card__description">
+        KT 프록시 서버를 확장한 프로젝트 입니다. 
+      </div>
+      
+      <div class="project-card__meta">
+        <div class="project-card__date">
+          <q-icon name="calendar_month" />
+          <span>2025.02</span>
         </div>
         <div class="project-card__status">
           <q-icon name="check_circle" color="green" />
           <span>완료</span>
         </div>
       </div>
+    </q-card-section>
+  </q-card>
+  <q-card class="project-card">
+    <div class="project-card__image-container">
+      <img 
+        src="~/assets/image/shin.jpg" 
+        class="project-card__image"
+        alt="프로젝트 이미지"
+      />
+      <div class="project-card__overlay">
+        <div class="project-card__tech-stack">
+          <q-chip size="sm" color="primary" text-color="white">Vue.js</q-chip>
+          <q-chip size="sm" color="secondary" text-color="white">SpringBoot</q-chip>
+        </div>
+        <q-btn 
+          icon="open_in_new" 
+          color="white" 
+          round 
+          size="lg"
+          class="project-card__view-btn"
+        />
+      </div>
+    </div>
+    <q-card-section class="project-card__content">
+      <div class="text-h6 project-card__title">신한홈뱅크</div>
+      <div class="text-subtitle2 project-card__description">
+        신한은행 홈뱅크 앱 vue3, 운영, 배치, 통계
+      </div>
       
-      <div class="project-card__actions">
-        <q-btn 
-          flat 
-          color="primary" 
-          size="sm"
-          icon="code"
-          label="코드 보기"
-        />
-        <q-btn 
-          flat 
-          color="secondary" 
-          size="sm"
-          icon="visibility"
-          label="라이브 데모"
-        />
+      <div class="project-card__meta">
+        <div class="project-card__date">
+          <q-icon name="calendar_month" />
+          <span>2024.5</span>
+        </div>
+        <div class="project-card__status">
+          <q-icon name="check_circle" color="green" />
+          <span>완료</span>
+        </div>
       </div>
     </q-card-section>
   </q-card>

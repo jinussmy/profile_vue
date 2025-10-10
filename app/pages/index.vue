@@ -5,7 +5,7 @@
       <div class="hero-content">
         <div class="profile-image-container">
           <div class="profile-image">
-            <q-avatar size="220px" class="profile-avatar">
+            <q-avatar size="200px" class="profile-avatar">
               <img src="~/assets/image/me.jpg" alt="Profile" />
             </q-avatar>
             <div class="status-indicator online"></div>
@@ -21,10 +21,9 @@
             팀워크를 중시하는 풀스택 개발자입니다.<br>
             백엔드, 프론트엔드 모두 가능합니다.
           </p>
-          
           <div class="profile-stats">
             <div class="stat-item">
-              <div class="stat-number">16+</div>
+              <div class="stat-number">17+</div>
               <div class="stat-label">년 경력</div>
             </div>
             <div class="stat-item">
@@ -69,43 +68,43 @@
     <section class="skills-section">
       <div class="section-header">
         <h2 class="section-title">기술 스택</h2>
-        <p class="section-description">현재 사용하고 있는 기술들입니다</p>
+        <p class="section-description">최근 사용하고 있는 기술들입니다</p>
       </div>
       
       <div class="skills-grid">
         <AppCard class="skill-card">
           <template #header>
             <div class="skill-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Vue.js" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="SpringBoot" />
             </div>
           </template>
-          <h3 class="skill-title">Spring, SpringBoot</h3>
+          <h3 class="skill-title">SpringBoot</h3>
           <p class="skill-description">
             백엔드 핵심 프레임워크
           </p>
           <div class="skill-level">
             <div class="skill-bar">
-              <div class="skill-progress" style="width: 95%"></div>
+              <div class="skill-progress" style="width: 90%"></div>
             </div>
-            <span class="skill-percentage">95%</span>
+            <span class="skill-percentage">90%</span>
           </div>
         </AppCard>
 
         <AppCard class="skill-card">
           <template #header>
             <div class="skill-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Vue.js" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
             </div>
           </template>
-          <h3 class="skill-title">Git, Svn...</h3>
+          <h3 class="skill-title">Git</h3>
           <p class="skill-description">
             버전 관리 및 협업 도구
           </p>
           <div class="skill-level">
             <div class="skill-bar">
-              <div class="skill-progress" style="width: 95%"></div>
+              <div class="skill-progress" style="width: 90%"></div>
             </div>
-            <span class="skill-percentage">95%</span>
+            <span class="skill-percentage">90%</span>
           </div>
         </AppCard>
 
@@ -121,9 +120,9 @@
           </p>
           <div class="skill-level">
             <div class="skill-bar">
-              <div class="skill-progress" style="width: 95%"></div>
+              <div class="skill-progress" style="width: 80%"></div>
             </div>
-            <span class="skill-percentage">95%</span>
+            <span class="skill-percentage">80%</span>
           </div>
         </AppCard>
 
@@ -139,9 +138,9 @@
           </p>
           <div class="skill-level">
             <div class="skill-bar">
-              <div class="skill-progress" style="width: 90%"></div>
+              <div class="skill-progress" style="width: 80%"></div>
             </div>
-            <span class="skill-percentage">90%</span>
+            <span class="skill-percentage">80%</span>
           </div>
         </AppCard>
 
@@ -157,29 +156,37 @@
           </p>
           <div class="skill-level">
             <div class="skill-bar">
-              <div class="skill-progress" style="width: 85%"></div>
+              <div class="skill-progress" style="width: 80%"></div>
             </div>
-            <span class="skill-percentage">85%</span>
+            <span class="skill-percentage">80%</span>
           </div>
         </AppCard>
 
         <AppCard class="skill-card">
           <template #header>
             <div class="skill-icon">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
             </div>
           </template>
-          <h3 class="skill-title">Tailwind CSS</h3>
+          <h3 class="skill-title">Node.js</h3>
           <p class="skill-description">
-            유틸리티 퍼스트 CSS 프레임워크
+            자바스크립트 런타임 환경
           </p>
           <div class="skill-level">
             <div class="skill-bar">
-              <div class="skill-progress" style="width: 88%"></div>
+              <div class="skill-progress" style="width: 80%"></div>
             </div>
-            <span class="skill-percentage">88%</span>
+            <span class="skill-percentage">80%</span>
           </div>
         </AppCard>
+      </div>
+       <div class="text-center q-mt-xl">
+        <NuxtLink to="/skill">
+          <q-btn color="primary" outline size="lg" roundedno-caps>
+            모든 스킬 보기
+          <q-icon name="arrow_forward" class="q-ml-sm"/>
+          </q-btn>
+        </NuxtLink>
       </div>
     </section>
 
@@ -191,22 +198,16 @@
       </div>
       
       <div class="projects-grid">
-        <div v-for="n in 4" :key="n" class="project-item">
           <CourseCard />
-        </div>
       </div>
       
       <div class="text-center q-mt-xl">
-        <q-btn 
-          color="primary" 
-          outline 
-          size="lg" 
-          rounded
-          no-caps
-        >
-          모든 프로젝트 보기
-          <q-icon name="arrow_forward" class="q-ml-sm" />
-        </q-btn>
+        <NuxtLink to="/project">
+          <q-btn color="primary" outline size="lg" roundedno-caps>
+            모든 프로젝트 보기
+          <q-icon name="arrow_forward" class="q-ml-sm"/>
+          </q-btn>
+        </NuxtLink>
       </div>
     </section>
   </q-page>
@@ -216,7 +217,7 @@
 import { button } from '#build/ui';
 import { Dialog } from 'quasar';
 
-const resumeUrl = '/files/[2025.07.25]이력서_남진우_발주날짜포함.docx'
+const resumeUrl = '/files/이력서_남진우.pdf'
 
 const showConfirmDialog = () => {
 
@@ -236,7 +237,7 @@ const showConfirmDialog = () => {
     // a 태그를 동적으로 생성하여 다운로드 실행
     const link = document.createElement('a')
     link.href = resumeUrl
-    link.download = '이력서_남진우.docx'
+    link.download = '이력서_남진우.pdf'
     link.click()
   }).onCancel(() => {
     console.log('다운로드 취소됨')
@@ -352,8 +353,8 @@ const downloadResume = () => {
 }
 
 .profile-name {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 400;
   margin-bottom: 16px;
   line-height: 1.2;
   
@@ -390,7 +391,6 @@ const downloadResume = () => {
     gap: 30px;
   }
 }
-
 .stat-item {
   text-align: center;
 }

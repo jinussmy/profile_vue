@@ -4,22 +4,20 @@
     <section class="intro-section">
       <div class="intro-content">
         <div class="intro-text">
-          <h1 class="intro-title">
+          <!-- <h1 class="intro-title">
             안녕하세요, <span class="gradient-text">남진우</span>입니다
-          </h1>
-          <p class="intro-description">
-            팀워크를 최우선으로 생각하는 프론트엔드 개발자입니다.<br>
-            
-          </p>
-          
+          </h1>-->
+          <div class="intro-description">
+             <span class="gradient-text">팀워크</span>를 중시하는 개발자입니다.
+          </div> 
           <div class="intro-highlights">
-            <div class="highlight-item">
+            <!-- <div class="highlight-item">
               <q-icon name="code" size="2rem" color="primary" />
               <div>
-                <h3>16+ 년 경력</h3>
-                <p>백엔드,프론트엔드 개발</p>
+                <h3>17+ 년 경력</h3>
+                <p>백엔드, 프론트엔드 개발</p>
               </div>
-            </div>
+            </div> -->
             <div class="highlight-item">
               <q-icon name="school" size="2rem" color="secondary" />
               <div>
@@ -38,7 +36,7 @@
         </div>
         
         <div class="intro-image">
-          <q-avatar size="300px" class="intro-avatar">
+          <q-avatar size="200px" class="intro-avatar">
             <img src="~/assets/image/me.jpg" alt="Profile" />
           </q-avatar>
         </div>
@@ -59,18 +57,18 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="work" size="2rem" color="primary" />
+                  <q-icon name="school" size="2rem" color="primary" />
                   <div>
-                    <h3>시니어 프론트엔드 개발자</h3>
-                    <p class="company">테크 스타트업 • 2022 - 현재</p>
+                    <h3>미래엔 엠티처</h3>
+                    <p class="company">출판사 • 2025 - 현재</p>
                   </div>
                 </div>
               </template>
               <ul class="experience-details">
-                <li>Vue.js와 Nuxt.js를 활용한 대규모 웹 애플리케이션 개발</li>
-                <li>TypeScript 도입으로 코드 품질 및 개발 효율성 향상</li>
-                <li>팀 리딩 및 신입 개발자 멘토링</li>
-                <li>CI/CD 파이프라인 구축 및 배포 자동화</li>
+                <li>출판사 사이트 개발 및 유지보수</li>
+                <li>java, mariaDB, springBoot, gradle, git, thymeleaf</li>
+                <li>역할 : PL 백엔드,프런트엔드 개발 유지보수 수행</li>
+                <li>포인트 시스템 신규 개발 및 기타 개발</li>
               </ul>
             </AppCard>
           </div>
@@ -84,16 +82,16 @@
                 <div class="experience-header">
                   <q-icon name="business" size="2rem" color="secondary" />
                   <div>
-                    <h3>프론트엔드 개발자</h3>
-                    <p class="company">웹 에이전시 • 2021 - 2022</p>
+                    <h3>KT GateWay</h3>
+                    <p class="company">KT • 2024 - 2025</p>
                   </div>
                 </div>
               </template>
               <ul class="experience-details">
-                <li>다양한 클라이언트 프로젝트 참여</li>
-                <li>반응형 웹 디자인 및 모바일 최적화</li>
-                <li>API 연동 및 상태 관리 구현</li>
-                <li>성능 최적화 및 SEO 개선</li>
+                <li>삼성 TV 앱을 위한 KT GateWay 프록시 서버 확장 개발</li>
+                <li>java, mysql, springBoot, gradle, apach</li>
+                <li>역할 : PL 백엔드 개발 수행, 운영관리 지원</li>
+                <li>성능 최적화 및 트래픽, 비동기, 이중화 및 프록시 관련 설정</li>
               </ul>
             </AppCard>
           </div>
@@ -105,30 +103,174 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="school" size="2rem" color="accent" />
+                  <q-icon name="business" size="2rem" color="primary" />
                   <div>
-                    <h3>컴퓨터공학과 졸업</h3>
-                    <p class="company">한국대학교 • 2017 - 2021</p>
+                    <h3>신한홈뱅크</h3>
+                    <p class="company">신한은행 • 2024</p>
                   </div>
                 </div>
               </template>
               <ul class="experience-details">
-                <li>컴퓨터공학 학사 학위 취득</li>
-                <li>웹 개발 동아리 활동</li>
-                <li>졸업 프로젝트로 Vue.js 기반 웹 애플리케이션 개발</li>
-                <li>학점 3.8/4.5 (우수한 성적)</li>
+                <li>신한홈뱅크 앱을 위한 API, 운영 관리, 배치, 통계 개발</li>
+                <li>java, oralce, springBoot, maven, vue3</li>
+                <li>역할 : PL 백엔드, 프런트엔드 개발 수행 , 운영 관리 개발</li>
+                <li>설계 분석, API, 운영 관리, 배치, 통계 시스템 구축</li>
               </ul>
             </AppCard>
           </div>
         </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="business" size="2rem" color="accent" />
+                  <div>
+                    <h3>솔브레인 통합 포털</h3>
+                    <p class="company">솔브레인 • 2023</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>솔브레인 탄소배출 시스템 통합 포털 개발</li>
+                <li>java, oralce, 전자전부프레임워크, maven, ibsheet</li>
+                <li>역할 : PL 백엔드, 프론트엔드 개발 수행</li>
+                <li>탄소 배출 시스템 구성 및 로직 분석 개발, 통계 시스템 구축</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="business" size="2rem" color="secondary" />
+                  <div>
+                    <h3>롯데환경에너지 통합 시스템</h3>
+                    <p class="company">롯데정보통신 • 2022</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>롯데 탄소배출 시스템 통합 포털 개발</li>
+                <li>java, oralce, 전자전부프레임워크, maven</li>
+                <li>역할 : PL 백엔드 개발 수행</li>
+                <li>탄소 배출 시스템 구성 및 로직 분석 개발, 통계 시스템</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="business" size="2rem" color="accent" />
+                  <div>
+                    <h3>파인웨더 기상관측 시스템 </h3>
+                    <p class="company">한국천문연구원외. • 2026~2021</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>서해대교, 광안대교, 도로 공사 관측 시스템 개발</li>
+                <li>레인보우로보틱스와 몽골, 모로코, 미국, 이스라엘 4개국 출장</li>
+                <li>java, mysql, spring, maven</li>
+                <li>관측 센서들의 데이터를 데이터 로거에서 소켓으로 전달 받아 모니터링 시스템 개발</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="business" size="2rem" color="accent" />
+                  <div>
+                    <h3>지비엠아이엔씨 기상솔루션</h3>
+                    <p class="company">지비엠아이엔씨 • 2014~2016</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>제주공항 LLWAS(저층윈드시어 알람시스템)설치, 모니터링 개발</li>
+                <li>포항공항 AMOS(자동기상관측장비시스템)설치</li>
+                <li>153웨더 날씨 시스템 개발</li>
+                <li>java, mysql, spring, batch, socket, android, flex</li>
+                <li>공공기관 프로젝트 PM 및 시스템 출장 개발</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="business" size="2rem" color="accent" />
+                  <div>
+                    <h3>SK 관련 서비스 개발 </h3>
+                    <p class="company">SK • 2011~2014</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>T서비스 : SKT 안드로이드 통합 앱 개발</li>
+                <li>T클라우드 OneId : SK OneID 통합 개발</li>
+                <li>SK이매진 : 쇼핑, sns 연동을 위한 안드로이드 앱 개발</li>
+                <li>android, java, spring, mysql, oracle, linux</li>
+                <li>공공기관 프로젝트 PM 및 시스템 출장 개발</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="business" size="2rem" color="accent" />
+                  <div>
+                    <h3>삼성전자 파견 </h3>
+                    <p class="company">삼성전자  • 2008~2010</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>타이밍체커 3차 : 휴대폰 메모리 추가 모델 적용 자동화 웹, 출력 자동화 시스템</li>
+                <li>타이밍체커 2차 : 휴대폰 메모리 시간 체크 모델분석 자동화 프로그램 개발</li>
+                <li>java, jsp, struts, oralce, flex</li>
+                <li>메모리 적용 자동화 모듈개발, 출력 자동화, 어도비 flex활용</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
+
+
       </div>
     </section>
+
+
 
     <!-- 연락처 섹션 -->
     <section class="contact-section">
       <div class="section-header">
         <h2 class="section-title">연락처</h2>
-        <p class="section-description">프로젝트나 협업에 관심이 있으시다면 언제든 연락주세요</p>
+        <p class="section-description">질문 사항이 있으시다면 언제든 연락주세요</p>
       </div>
       
       <div class="contact-grid">
@@ -239,8 +381,8 @@
 }
 
 .intro-description {
-  font-size: 1.25rem;
-  margin-bottom: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   opacity: 0.9;
   line-height: 1.6;
 }
@@ -248,7 +390,7 @@
 .intro-highlights {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .highlight-item {

@@ -4,22 +4,20 @@
     <section class="intro-section">
       <div class="intro-content">
         <div class="intro-text">
-          <h1 class="intro-title">
+          <!-- <h1 class="intro-title">
             안녕하세요, <span class="gradient-text">남진우</span>입니다
-          </h1>
-          <p class="intro-description">
-            팀워크를 최우선으로 생각하는 프론트엔드 개발자입니다.<br>
-            Vue.js와 Nuxt.js를 기반으로 현대적이고 반응형인 웹 애플리케이션을 개발합니다.
-          </p>
-          
+          </h1> -->
+          <div class="intro-description">
+             <span class="gradient-text">성실함</span>을 중시하는 개발자입니다. 
+          </div>
           <div class="intro-highlights">
-            <div class="highlight-item">
+            <!-- <div class="highlight-item">
               <q-icon name="code" size="2rem" color="primary" />
               <div>
-                <h3>16+ 년 경력</h3>
-                <p>백엔드,프론트엔드 개발</p>
+                <h3>17+ 년 경력</h3>
+                <p>백엔드, 프론트엔드 개발</p>
               </div>
-            </div>
+            </div> -->
             <div class="highlight-item">
               <q-icon name="school" size="2rem" color="secondary" />
               <div>
@@ -38,97 +36,210 @@
         </div>
         
         <div class="intro-image">
-          <q-avatar size="300px" class="intro-avatar">
+          <q-avatar size="200px" class="intro-avatar">
             <img src="~/assets/image/me.jpg" alt="Profile" />
           </q-avatar>
         </div>
       </div>
     </section>
 
-    <!-- 경력 섹션 -->
-    <section class="experience-section">
+     <!-- 기술 스택 섹션 -->
+    <section class="skills-section">
       <div class="section-header">
-        <h2 class="section-title">경력 및 경험</h2>
-        <p class="section-description">지금까지의 여정을 소개합니다</p>
+        <h2 class="section-title">기술 스택</h2>
+        <p class="section-description">프로젝트에 사용한 기술들입니다</p>
       </div>
       
-      <div class="experience-timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <AppCard>
-              <template #header>
-                <div class="experience-header">
-                  <q-icon name="work" size="2rem" color="primary" />
-                  <div>
-                    <h3>시니어 프론트엔드 개발자</h3>
-                    <p class="company">테크 스타트업 • 2022 - 현재</p>
-                  </div>
-                </div>
-              </template>
-              <ul class="experience-details">
-                <li>Vue.js와 Nuxt.js를 활용한 대규모 웹 애플리케이션 개발</li>
-                <li>TypeScript 도입으로 코드 품질 및 개발 효율성 향상</li>
-                <li>팀 리딩 및 신입 개발자 멘토링</li>
-                <li>CI/CD 파이프라인 구축 및 배포 자동화</li>
-              </ul>
-            </AppCard>
-          </div>
-        </div>
+      <div class="skills-grid">
         
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <AppCard>
-              <template #header>
-                <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="secondary" />
-                  <div>
-                    <h3>프론트엔드 개발자</h3>
-                    <p class="company">웹 에이전시 • 2021 - 2022</p>
-                  </div>
-                </div>
-              </template>
-              <ul class="experience-details">
-                <li>다양한 클라이언트 프로젝트 참여</li>
-                <li>반응형 웹 디자인 및 모바일 최적화</li>
-                <li>API 연동 및 상태 관리 구현</li>
-                <li>성능 최적화 및 SEO 개선</li>
-              </ul>
-            </AppCard>
-          </div>
-        </div>
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
+            </div>
+          </template>
+          <h3 class="skill-title">Java</h3>
+          <p class="skill-description">
+            주력 백엔드 프로그래밍 언어
+          </p>
+        </AppCard>
         
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <AppCard>
-              <template #header>
-                <div class="experience-header">
-                  <q-icon name="school" size="2rem" color="accent" />
-                  <div>
-                    <h3>컴퓨터공학과 졸업</h3>
-                    <p class="company">한국대학교 • 2017 - 2021</p>
-                  </div>
-                </div>
-              </template>
-              <ul class="experience-details">
-                <li>컴퓨터공학 학사 학위 취득</li>
-                <li>웹 개발 동아리 활동</li>
-                <li>졸업 프로젝트로 Vue.js 기반 웹 애플리케이션 개발</li>
-                <li>학점 3.8/4.5 (우수한 성적)</li>
-              </ul>
-            </AppCard>
-          </div>
-        </div>
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            </div>
+          </template>
+          <h3 class="skill-title">JavaScript</h3>
+          <p class="skill-description">
+            동적 웹 애플리케이션 개발의 핵심 언어
+          </p>
+        </AppCard>
+        
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
+            </div>
+          </template>
+          <h3 class="skill-title">HTML5</h3>
+          <p class="skill-description">
+            웹 페이지 구조 및 콘텐츠 작성의 표준 마크업 언어
+          </p>
+        </AppCard>
+        
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle" />
+            </div>
+          </template>
+          <h3 class="skill-title">Oracle</h3>
+          <p class="skill-description">
+            신뢰성 높은 관계형 데이터베이스 관리 시스템
+          </p>
+        </AppCard>
+        
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="Mssql" />
+            </div>
+          </template>
+          <h3 class="skill-title">Mssql</h3>
+          <p class="skill-description">
+            마이크로소프트의 관계형 데이터베이스 관리 시스템
+          </p> 
+        </AppCard>
+        
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySql" />
+            </div>
+          </template>
+          <h3 class="skill-title">MySql</h3>
+          <p class="skill-description">
+            오픈 소스 관계형 데이터베이스 관리 시스템
+          </p>
+        </AppCard>
+        
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" alt="Android" />
+            </div>
+          </template>
+          <h3 class="skill-title">Android</h3>
+          <p class="skill-description">
+            모바일 애플리케이션 개발 플랫폼
+          </p>
+        </AppCard>
+        
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" />
+            </div>
+          </template>
+          <h3 class="skill-title">Linux</h3>
+          <p class="skill-description">
+            서버 운영체제 및 개발 환경
+          </p>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="SpringBoot" />
+            </div>
+          </template>
+          <h3 class="skill-title">SpringBoot</h3>
+          <p class="skill-description">
+            백엔드 핵심 프레임워크
+          </p>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+            </div>
+          </template>
+          <h3 class="skill-title">Git</h3>
+          <p class="skill-description">
+            버전 관리 및 협업 도구
+          </p>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js" />
+            </div>
+          </template>
+          <h3 class="skill-title">Vue.js</h3>
+          <p class="skill-description">
+            반응형 웹 애플리케이션 개발의 핵심 도구
+          </p>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxtjs/nuxtjs-original.svg" alt="Nuxt.js" />
+            </div>
+          </template>
+          <h3 class="skill-title">Nuxt.js</h3>
+          <p class="skill-description">
+            Vue.js 기반의 풀스택 프레임워크
+          </p>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            </div>
+          </template>
+          <h3 class="skill-title">TypeScript</h3>
+          <p class="skill-description">
+            타입 안전성을 제공하는 JavaScript 확장
+          </p>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            </div>
+          </template>
+          <h3 class="skill-title">Node.js</h3>
+          <p class="skill-description">
+            자바스크립트 런타임 환경
+          </p>
+        </AppCard>
+
+        <AppCard class="skill-card">
+          <template #header>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg" alt="Tomcat" />
+            </div>
+          </template>
+          <h3 class="skill-title">Tomcat</h3>
+          <p class="skill-description">
+            자바 서블릿 컨테이너
+          </p>
+        </AppCard>
       </div>
     </section>
+
 
     <!-- 연락처 섹션 -->
     <section class="contact-section">
       <div class="section-header">
         <h2 class="section-title">연락처</h2>
-        <p class="section-description">프로젝트나 협업에 관심이 있으시다면 언제든 연락주세요</p>
+        <p class="section-description">질문 사항이 있으시다면 언제든 연락주세요</p>
       </div>
       
       <div class="contact-grid">
@@ -138,7 +249,7 @@
           </template>
           <h3>이메일</h3>
           <p>jinussmy@naver.com</p>
-          <q-btn color="primary" outline size="sm">
+          <q-btn color="primary" outline size="sm" @click="sendEmail">
             <q-icon name="send" class="q-mr-sm" />
             이메일 보내기
           </q-btn>
@@ -150,7 +261,7 @@
           </template>
           <h3>전화번호</h3>
           <p>+82 10-4651-0134</p>
-          <q-btn color="secondary" outline size="sm">
+          <q-btn color="secondary" outline size="sm" @click="sendTel">
             <q-icon name="call" class="q-mr-sm" />
             전화하기
           </q-btn>
@@ -174,7 +285,21 @@
 </template>
 
 <script setup lang="ts">
-// 포트폴리오 페이지 - 개발자 소개, 경력, 연락처 정보
+
+const sendEmail = () => {
+    // a 태그를 동적으로 생성하여 이메일 보냄
+    const link = document.createElement('a')
+    link.href = 'mailto:jinussmy@naver.com'
+    link.click()
+}
+const sendTel = () => {
+    // a 태그를 동적으로 생성하여 전화 걸기
+    const link = document.createElement('a')
+    link.href = 'tel:+821046510134'
+    link.click()
+}
+  
+
 </script>
 
 <style scoped lang="scss">
@@ -239,8 +364,8 @@
 }
 
 .intro-description {
-  font-size: 1.25rem;
-  margin-bottom: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   opacity: 0.9;
   line-height: 1.6;
 }
@@ -248,9 +373,8 @@
 .intro-highlights {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
-
 .highlight-item {
   display: flex;
   align-items: center;
@@ -293,91 +417,103 @@
   margin: 0 auto;
 }
 
-// 경력 섹션
-.experience-section {
+
+// 기술 스택 섹션
+.skills-section {
   padding: 80px 24px;
   background: white;
 }
 
-.experience-timeline {
-  max-width: 800px;
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.section-description {
+  font-size: 1.125rem;
+  color: #7f8c8d;
+  max-width: 600px;
   margin: 0 auto;
-  position: relative;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  text-align: center;
+  transition: transform 0.3s ease;
   
-  &::before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(180deg, #667eea, #764ba2);
+  &:hover {
+    transform: translateY(-8px);
   }
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-  padding-left: 80px;
-}
-
-.timeline-marker {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.3);
-}
-
-.timeline-content {
-  .app-card {
-    margin: 0;
-  }
-}
-
-.experience-header {
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 20px;
   
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin: 0 0 4px 0;
-  }
-  
-  .company {
-    color: #7f8c8d;
-    margin: 0;
-    font-size: 0.9rem;
+  img {
+    width: 50px;
+    height: 50px;
   }
 }
 
-.experience-details {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0 0 0;
-  
-  li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 8px;
-    color: #5a6c7d;
-    line-height: 1.6;
-    
-    &::before {
-      content: '▶';
-      position: absolute;
-      left: 0;
-      color: #667eea;
-      font-size: 0.8rem;
-    }
-  }
+.skill-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.skill-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skill-level {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-bar {
+  flex: 1;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.skill-percentage {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.9rem;
 }
 
 // 연락처 섹션

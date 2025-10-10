@@ -3,7 +3,7 @@
     <q-header elevated class="profile-header">
       <q-toolbar class="profile-toolbar">
         <div class="profile-brand">
-          <span class="brand-text">프로필</span>
+          <span class="brand-text">포트폴리오</span>
           <span class="brand-subtitle">FullStack Developer</span>
         </div>
         
@@ -53,7 +53,7 @@
           <div class="footer-left">
             <p>&copy; 2025 NAM JIN WOO. All rights reserved.</p>
           </div>
-          <div class="footer-right">
+          <!-- <div class="footer-right">
             <q-btn 
               flat 
               round 
@@ -86,6 +86,9 @@
             >
               <q-tooltip>LinkedIn</q-tooltip>
             </q-btn>
+          </div> -->
+          <div class="footer-right">
+             <p>Vue/Nuxt</p>
           </div>
         </div>
       </q-toolbar>
@@ -94,7 +97,6 @@
 </template>
 
 <script setup lang="ts">
-// Vue/Nuxt 개발자 프로필 사이트 레이아웃
 </script>
 
 <style scoped lang="scss">
