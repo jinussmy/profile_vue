@@ -195,7 +195,7 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="accent" />
+                  <q-icon name="business" size="2rem" color="secondary" />
                   <div>
                     <h3>지비엠아이엔씨 기상솔루션</h3>
                     <p class="company">지비엠아이엔씨 • 2014~2016</p>
@@ -243,9 +243,9 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="accent" />
+                  <q-icon name="business" size="2rem" color="primary" />
                   <div>
-                    <h3>삼성전자 파견 </h3>
+                    <h3>삼성전자</h3>
                     <p class="company">삼성전자  • 2008~2010</p>
                   </div>
                 </div>

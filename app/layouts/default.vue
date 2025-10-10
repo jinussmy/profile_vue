@@ -88,7 +88,7 @@
             </q-btn>
           </div> -->
           <div class="footer-right">
-             <p>Vue/Nuxt</p>
+             <span>Vue/Nuxt</span>
           </div>
         </div>
       </q-toolbar>
