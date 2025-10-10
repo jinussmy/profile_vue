@@ -137,7 +137,7 @@
             <q-icon name="email" size="2rem" color="primary" />
           </template>
           <h3>이메일</h3>
-          <p>kimdev@example.com</p>
+          <p>jinussmy@naver.com</p>
           <q-btn color="primary" outline size="sm">
             <q-icon name="send" class="q-mr-sm" />
             이메일 보내기
@@ -149,14 +149,14 @@
             <q-icon name="phone" size="2rem" color="secondary" />
           </template>
           <h3>전화번호</h3>
-          <p>+82 10-1234-5678</p>
+          <p>+82 10-4651-0134</p>
           <q-btn color="secondary" outline size="sm">
             <q-icon name="call" class="q-mr-sm" />
             전화하기
           </q-btn>
         </AppCard>
         
-        <AppCard class="contact-card">
+        <!-- <AppCard class="contact-card" >
           <template #header>
             <q-icon name="language" size="2rem" color="accent" />
           </template>
@@ -166,7 +166,8 @@
             <q-icon name="open_in_new" class="q-mr-sm" />
             프로필 보기
           </q-btn>
-        </AppCard>
+        </AppCard> -->
+
       </div>
     </section>
   </q-page>
