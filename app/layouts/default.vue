@@ -3,9 +3,8 @@
     <q-header elevated class="profile-header">
       <q-toolbar class="profile-toolbar">
         <div class="profile-brand">
-          <q-icon name="code" size="1.5rem" color="primary" class="q-mr-sm" />
-          <span class="brand-text">김개발</span>
-          <span class="brand-subtitle">Vue/Nuxt Developer</span>
+          <span class="brand-text">프로필</span>
+          <span class="brand-subtitle">FullStack Developer</span>
         </div>
         
         <q-space />
@@ -13,7 +12,7 @@
         <div class="profile-nav">
           <q-btn 
             flat 
-            label="홈" 
+            label="메인" 
             to="/" 
             class="nav-btn"
             :class="{ 'nav-btn--active': $route.path === '/' }"
@@ -44,7 +43,7 @@
       <q-toolbar class="footer-toolbar">
         <div class="footer-content">
           <div class="footer-left">
-            <p>&copy; 2024 김개발. All rights reserved.</p>
+            <p>&copy; 2025 NAM JIN WOO. All rights reserved.</p>
           </div>
           <div class="footer-right">
             <q-btn 
@@ -92,7 +91,7 @@
 
 <style scoped lang="scss">
 .profile-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #abacab 0%, #2c2b2c 100%);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);

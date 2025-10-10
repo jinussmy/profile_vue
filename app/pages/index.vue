@@ -5,8 +5,8 @@
       <div class="hero-content">
         <div class="profile-image-container">
           <div class="profile-image">
-            <q-avatar size="200px" class="profile-avatar">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Profile" />
+            <q-avatar size="220px" class="profile-avatar">
+              <img src="~/assets/image/me.jpg" alt="Profile" />
             </q-avatar>
             <div class="status-indicator online"></div>
           </div>
@@ -14,17 +14,17 @@
         
         <div class="profile-info">
           <h1 class="profile-name">
-            김개발
-            <span class="gradient-text">Vue/Nuxt Developer</span>
+            남진우
+            <span class="gradient-text">FullStack Developer</span>
           </h1>
           <p class="profile-description">
-            사용자 경험을 중시하는 프론트엔드 개발자입니다.<br>
-            Vue.js와 Nuxt.js를 활용한 모던 웹 애플리케이션 개발을 전문으로 합니다.
+            사용자 경험을 중시하는 풀스택 개발자입니다.<br>
+            백엔드, 프론트엔드 모두 가능합니다.
           </p>
           
           <div class="profile-stats">
             <div class="stat-item">
-              <div class="stat-number">3+</div>
+              <div class="stat-number">16+</div>
               <div class="stat-label">년 경력</div>
             </div>
             <div class="stat-item">
@@ -56,8 +56,8 @@
               class="action-btn"
               no-caps
             >
-              <q-icon name="download" class="q-mr-sm" />
-              이력서 다운로드
+            <q-icon name="download" class="q-mr-sm" />
+                <a href="/files/[2025.07.25]이력서_남진우_발주날짜포함.docx" download>이력서 다운로드</a>
             </q-btn>
           </div>
         </div>
@@ -175,7 +175,10 @@
   </q-page>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { button } from '#build/ui';
+
+</script>
 
 <style scoped lang="scss">
 .profile-page {
@@ -184,7 +187,7 @@
 
 // 히어로 섹션
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #363636 0%, #d6d6d8 100%);
   color: white;
   padding: 100px 0;
   position: relative;
@@ -478,7 +481,7 @@
   }
   
   .hero-section {
-    padding: 60px 0;
+    padding: 10px 0;
   }
 }
 </style>

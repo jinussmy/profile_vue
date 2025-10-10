@@ -5,7 +5,7 @@
       <div class="intro-content">
         <div class="intro-text">
           <h1 class="intro-title">
-            안녕하세요, <span class="gradient-text">김개발</span>입니다
+            안녕하세요, <span class="gradient-text">남진우</span>입니다
           </h1>
           <p class="intro-description">
             사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다.<br>
@@ -16,14 +16,14 @@
             <div class="highlight-item">
               <q-icon name="code" size="2rem" color="primary" />
               <div>
-                <h3>3+ 년 경력</h3>
+                <h3>16+ 년 경력</h3>
                 <p>프론트엔드 개발</p>
               </div>
             </div>
             <div class="highlight-item">
               <q-icon name="school" size="2rem" color="secondary" />
               <div>
-                <h3>컴퓨터공학</h3>
+                <h3>홍익대학교 컴퓨터공학</h3>
                 <p>학사 학위</p>
               </div>
             </div>
@@ -39,7 +39,7 @@
         
         <div class="intro-image">
           <q-avatar size="300px" class="intro-avatar">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Profile" />
+            <img src="~/assets/image/me.jpg" alt="Profile" />
           </q-avatar>
         </div>
       </div>
