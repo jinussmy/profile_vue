@@ -57,7 +57,7 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="school" size="2rem" color="primary" />
+                  <q-icon name="school" size="2rem" color="accent" />
                   <div>
                     <h3>미래엔 엠티처</h3>
                     <p class="company">출판사 • 2025 - 현재</p>
@@ -80,7 +80,7 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="secondary" />
+                  <q-icon name="wifi" size="2rem" color="red" />
                   <div>
                     <h3>KT GateWay</h3>
                     <p class="company">KT • 2024 - 2025</p>
@@ -103,7 +103,7 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="primary" />
+                  <q-icon name="local_atm" size="2rem" color="blue" />
                   <div>
                     <h3>신한홈뱅크</h3>
                     <p class="company">신한은행 • 2024</p>
@@ -149,7 +149,7 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="secondary" />
+                  <q-icon name="power_settings_new" size="2rem" color="secondary" />
                   <div>
                     <h3>롯데환경에너지 통합 시스템</h3>
                     <p class="company">롯데정보통신 • 2022</p>
@@ -172,7 +172,7 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="accent" />
+                  <q-icon name="wb_sunny" size="2rem" color="light-blue" />
                   <div>
                     <h3>파인웨더 기상관측 시스템 </h3>
                     <p class="company">한국천문연구원외. • 2026~2021</p>
@@ -180,10 +180,13 @@
                 </div>
               </template>
               <ul class="experience-details">
-                <li>서해대교, 광안대교, 도로 공사 관측 시스템 개발</li>
-                <li>레인보우로보틱스와 몽골, 모로코, 미국, 이스라엘 4개국 출장</li>
+                <li>서해대교 대교 관측 시스템 개발</li>
+                <li>태안,세평 VTS 도로 관측시스템 개발</li>
+                <li>공주 한국도로공사 관측 시스템 개발</li>
+                <li>부산시설공단 광안대교 시정관측 프로그램 개발</li>
+                <li>한국천문연구원, 레인보우로보틱스와 몽골,모로코,미국,이스라엘 4개국 출장</li>
                 <li>java, mysql, spring, maven</li>
-                <li>관측 센서들의 데이터를 데이터 로거에서 소켓으로 전달 받아 모니터링 시스템 개발</li>
+                <li>관측 센서들의 데이터를 데이터 로거에서 소켓으로 전달 받아 통합 모니터링 시스템 개발</li>
               </ul>
             </AppCard>
           </div>
@@ -195,7 +198,7 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="secondary" />
+                  <q-icon name="solar_power" size="2rem" color="brown" />
                   <div>
                     <h3>지비엠아이엔씨 기상솔루션</h3>
                     <p class="company">지비엠아이엔씨 • 2014~2016</p>
@@ -219,19 +222,18 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="accent" />
+                  <q-icon name="wifi" size="2rem" color="red" />
                   <div>
-                    <h3>SK 관련 서비스 개발 </h3>
-                    <p class="company">SK • 2011~2014</p>
+                    <h3> T 서비스  </h3>
+                    <p class="company">SK • 2013</p>
                   </div>
                 </div>
               </template>
               <ul class="experience-details">
-                <li>T서비스 : SKT 안드로이드 통합 앱 개발</li>
-                <li>T클라우드 OneId : SK OneID 통합 개발</li>
-                <li>SK이매진 : 쇼핑, sns 연동을 위한 안드로이드 앱 개발</li>
-                <li>android, java, spring, mysql, oracle, linux</li>
-                <li>공공기관 프로젝트 PM 및 시스템 출장 개발</li>
+                <li>SK 내장 앱 통합 서비스를 위한 SK Legacy System연동 API 개발</li>
+                <li>java, spring, Legacy System, oracle, android, linux</li>
+                <li>역할 : PL 백엔드</li>
+                <li>API를 미리 가비지 데이터로 구현 배포하여 단말 개발자들의 편의 제공</li>
               </ul>
             </AppCard>
           </div>
@@ -243,10 +245,33 @@
             <AppCard>
               <template #header>
                 <div class="experience-header">
-                  <q-icon name="business" size="2rem" color="primary" />
+                  <q-icon name="wifi" size="2rem" color="red" />
                   <div>
-                    <h3>삼성전자</h3>
-                    <p class="company">삼성전자  • 2008~2010</p>
+                    <h3> 이매진 쇼핑 </h3>
+                    <p class="company">SKP • 2011~2014</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>이매진 쇼핑, sns 연동을 위한 안드로이드 앱 개발</li>
+                <li>android, java, spring</li>
+                <li>PL 백엔드, 프론트 엔드</li>
+                <li>소셜 SNS 연동 개발,쇼핑몰 앱 개발, 서버 API 개발</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="developer_board" size="2rem" color="primary" />
+                  <div>
+                    <h3>타이밍 체커</h3>
+                    <p class="company">삼성전자  • 2009~2010</p>
                   </div>
                 </div>
               </template>
@@ -259,11 +284,33 @@
             </AppCard>
           </div>
         </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <AppCard>
+              <template #header>
+                <div class="experience-header">
+                  <q-icon name="energy_savings_leaf" size="2rem" color="light-green" />
+                  <div>
+                    <h3>생활 폐기물, 수송 인벤토리</h3>
+                    <p class="company">에코 프론티어  • 2008~2009</p>
+                  </div>
+                </div>
+              </template>
+              <ul class="experience-details">
+                <li>생활 폐기물 : 전국 생활폐기물 검색, 그래프 , 시스템 구축</li>
+                <li>수송 인벤토리 : 탄소배출 계산 및 검색, 그래프 표출 시스템</li>
+                <li>java, jsp, ibsheet, flex, chartFx, oracle</li>
+                <li>전국 폐기물 데이터 필터 API 와 화면 구축,탄소배출 로직 처리</li>
+              </ul>
+            </AppCard>
+          </div>
+        </div>
 
 
       </div>
     </section>
-
 
 
     <!-- 연락처 섹션 -->

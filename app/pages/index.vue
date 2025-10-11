@@ -18,7 +18,7 @@
             <span class="gradient-text">FullStack Developer</span>
           </h1>
           <p class="profile-description">
-            팀워크를 중시하는 풀스택 개발자입니다.<br>
+            팀워크를 중시하는 개발자입니다.<br>
             백엔드, 프론트엔드 모두 가능합니다.
           </p>
           <div class="profile-stats">
