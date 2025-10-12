@@ -217,7 +217,7 @@
 import { button } from '#build/ui';
 import { Dialog } from 'quasar';
 
-const resumeUrl = '/files/이력서_남진우.pdf'
+const resumeUrl = '/files/이력서_남진우_2025.pdf'
 
 const showConfirmDialog = () => {
 
