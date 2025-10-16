@@ -231,7 +231,7 @@ import { button } from '#build/ui';
 import { Dialog } from 'quasar';
 import ProjectCard from '~/components/ProjectCard.vue';
 
-const resumeUrl = '/files/이력서_20251017.doc'
+const resumeUrl = '/files/이력서_남진우_1.docx'
 
 const showConfirmDialog = () => {
 
@@ -251,7 +251,7 @@ const showConfirmDialog = () => {
     // a 태그를 동적으로 생성하여 다운로드 실행
     const link = document.createElement('a')
     link.href = resumeUrl
-    link.download = '이력서_남진우.doc'
+    link.download = '이력서_남진우.docx'
     link.click()
   }).onCancel(() => {
     console.log('다운로드 취소됨')
