@@ -175,7 +175,7 @@
                   <q-icon name="wb_sunny" size="2rem" color="light-blue" />
                   <div>
                     <h3>파인웨더 기상관측 시스템 </h3>
-                    <p class="company">한국천문연구원외. • 2026~2021</p>
+                    <p class="company">한국천문연구원외. • 2016~2021</p>
                   </div>
                 </div>
               </template>
@@ -248,7 +248,7 @@
                   <q-icon name="wifi" size="2rem" color="red" />
                   <div>
                     <h3> 이매진 쇼핑 </h3>
-                    <p class="company">SKP • 2011~2014</p>
+                    <p class="company">SKP • 2012</p>
                   </div>
                 </div>
               </template>

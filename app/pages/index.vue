@@ -57,7 +57,20 @@
               @click="showConfirmDialog"
             >
             <q-icon name="download" class="q-mr-sm"  />
-                이력서 다운로드
+                이력서(doc)
+            </q-btn>
+
+            <q-btn 
+              inline 
+              color="primary" 
+              size="lg" 
+              rounded 
+              class="action-btn"
+              no-caps
+              @click="downloadResume"
+            >
+            <q-icon name="download" class="q-mr-sm"  />
+               이력서(pdf)
             </q-btn>
           </div>
         </div>
@@ -198,7 +211,7 @@
       </div>
       
       <div class="projects-grid">
-          <CourseCard />
+          <ProjectCard />
       </div>
       
       <div class="text-center q-mt-xl">
@@ -216,8 +229,9 @@
 <script setup lang="ts">
 import { button } from '#build/ui';
 import { Dialog } from 'quasar';
+import ProjectCard from '~/components/ProjectCard.vue';
 
-const resumeUrl = '/files/이력서_남진우.pdf'
+const resumeUrl = '/files/이력서_20251017.doc'
 
 const showConfirmDialog = () => {
 
@@ -237,7 +251,7 @@ const showConfirmDialog = () => {
     // a 태그를 동적으로 생성하여 다운로드 실행
     const link = document.createElement('a')
     link.href = resumeUrl
-    link.download = '이력서_남진우.pdf'
+    link.download = '이력서_남진우.doc'
     link.click()
   }).onCancel(() => {
     console.log('다운로드 취소됨')
@@ -246,22 +260,36 @@ const showConfirmDialog = () => {
 
 // 사용 안함 
 const downloadResume = () => {
-  const resumeUrl = '/files/[2025.07.25]이력서_남진우_발주날짜포함.docx';
-  const fileName = '이력서_남진우.docx';
+  const resumeUrl = '/files/남진우_이력서.pdf';
+  const fileName = '이력서_남진우.pdf';
 
-  // Blob을 사용하여 다운로드 트리거
-  fetch(resumeUrl)
-    .then(response => response.blob())
-    .then(blob => {
-      const link = document.createElement('a');
-      link.href = URL.createObjectURL(blob);
-      link.download = fileName;
-      link.click();
-      URL.revokeObjectURL(link.href); // 메모리 해제
-    })
-    .catch(error => {
+  Dialog.create({
+    title: '다운로드 확인',
+    message: '이력서를 다운로드하시겠습니까?',
+    ok: {
+      label: '다운로드',
+      color: 'primary'
+    },
+    cancel: {
+      label: '취소',
+      color: 'negative'
+    }
+  }).onOk(() => {
+     // Blob을 사용하여 다운로드 트리거
+    fetch(resumeUrl)
+      .then(response => response.blob())
+      .then(blob => {
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = fileName;
+        link.click();
+        URL.revokeObjectURL(link.href); // 메모리 해제
+    }).catch(error => {
       console.error('파일 다운로드 실패:', error);
     });
+  }).onCancel(() => {
+    console.log('다운로드 취소됨')
+  })
 };
 </script>
 
